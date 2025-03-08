@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта, любимая!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: url('https://i.imgur.com/your-background.jpg') no-repeat center center/cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 36px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: darkred;
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>С 8 Марта, жаным менің❤️</h1>
+        <p>Тек сені ғана шын жүрекпен жақсы көре білдім, тек сен ғана маған шынайы махаббатты көрсете білдің, сол үшін мені сені қатты жақсы көремін, жаным менің, радость моя, любовь моя❤️</p>
+        <a href="#" class="btn" onclick="showMessage()">Жми сюда ❤️</a>
+        <p id="message">
+            Жаным менің, сені 8 Наурыз мерекесімен құттықтаймын. Әрдайым менің жанымда күлімдеп, жарқырап жүрші.  
+            Маған бұл өмірде махаббаттың не екенін көрсеткен сенсің, бұл өмірде өз махаббатымды таппаймын деп жүргенде,  
+            ойымды өзгерткен сенсің. Бұл әлемде сені жақсы көргендей ешкімді жақсы көрмеймін, барлық махаббатымды сен  
+            ғана ала білдің. Сені қатты жақсы көремін, жаным❤️
+        </p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
